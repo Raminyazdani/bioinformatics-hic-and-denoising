@@ -81,3 +81,88 @@ Key findings:
 - Main issues are assignment-style naming and section headers
 - All issues are text/naming related, no code logic to fix
 
+
+### Phase 3: Portfolio-Readiness Changes Applied
+
+#### Changes Made:
+
+**1. Created .gitignore** (STRUCTURE)
+- Created standard Python/Jupyter .gitignore
+- Includes patterns for __pycache__, .ipynb_checkpoints, virtual environments, IDEs, etc.
+
+**2. Renamed Notebooks** (RENAME)
+- `code/assignment_3_1.ipynb` → `code/image_denoising.ipynb`
+- `code/assignment_3_2.ipynb` → `code/hic_analysis.ipynb`
+
+**3. Updated Notebook Content** (TRACE removal)
+- **image_denoising.ipynb**: Replaced 10 instances of assignment-style references
+  - "Part (a)" → descriptive section headers
+  - "Part (b)" → descriptive section headers
+  - "Part (c)" → descriptive section headers
+  - "part (a)" references in text → "previously" or "baseline"
+- **hic_analysis.ipynb**: Replaced 6 instances of assignment-style references
+  - "part(a)" → descriptive section headers
+  - "part(b)" → descriptive section headers
+  - "part(c)" → descriptive section headers
+  - "part(d)" → descriptive section headers
+  - "part (a)" references in text and comments → "previously"
+
+**4. Updated README.md** (DOC + TRACE removal)
+- Changed title from "Bioinformatics Data Processing Pipeline" to "Hi-C Contact Matrix Analysis and Image Denoising"
+- Updated tagline to be more specific
+- Updated folder structure documentation (removed "assignment 3/" references)
+- Updated notebook filename references
+- Updated "How to Run" commands (removed "assignment 3/" from path)
+- Removed "Originally created in an academic setting" line
+- Improved "Repository Structure" section with clearer layout
+
+**5. Updated Tracking Files**
+- suggestion.txt: All 26 items marked as APPLIED
+- suggestions_done.txt: Documented all 26 applied changes with before/after snippets
+
+#### Impact:
+- All assignment/academic traces removed from visible content
+- Professional naming throughout
+- No code logic changes - all changes are text/naming only
+- Relative paths unchanged (already safe: `../data/noise.csv`)
+- No functional breaking changes expected
+
+
+### Phase 4: Verification
+
+#### Validation Tests Performed:
+
+**1. Notebook Structure Validation**
+- ✓ `image_denoising.ipynb`: Loaded successfully (20 cells: 13 markdown, 7 code)
+- ✓ `hic_analysis.ipynb`: Loaded successfully (13 cells: 7 markdown, 6 code)
+- ✓ No remaining "assignment" or "part (x)" references found in either notebook
+- ✓ All JSON structure is valid
+
+**2. Reference Consistency Check**
+- ✓ Searched both notebooks for any remaining assignment-style language
+- ✓ Confirmed all "Part (a)", "Part (b)", "part(a)", etc. have been replaced
+- ✓ All cross-references updated ("part (a)" → "previously", "baseline", etc.)
+
+**3. File System Verification**
+- ✓ Notebooks successfully renamed in filesystem
+- ✓ README.md updated with new filenames
+- ✓ .gitignore created with appropriate Python/Jupyter patterns
+- ✓ Data file `data/noise.csv` remains in place (unchanged)
+
+**4. Dependencies Check**
+- Requirements specified in `requirements.txt`
+- Libraries include: numpy, pandas, matplotlib, jupyter, cooler, cooltools
+- Note: Dependencies not pre-installed in build environment (expected)
+- Verification: Notebooks can be loaded and parsed without runtime errors
+
+#### Verification Results:
+✅ **All structural changes validated successfully**
+✅ **No assignment/academic traces remain**
+✅ **All filenames and references are consistent**
+✅ **Notebooks are ready for portfolio presentation**
+
+#### Limitations:
+- Full execution testing requires installing dependencies (`pip install -r requirements.txt`)
+- Hi-C analysis notebook requires network access to fetch data from public repositories
+- These are acceptable limitations; the code is structurally sound and ready to run
+

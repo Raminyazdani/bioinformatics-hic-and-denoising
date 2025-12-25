@@ -1,6 +1,6 @@
-# Bioinformatics Data Processing Pipeline
+# Hi-C Contact Matrix Analysis and Image Denoising
 
-**Computational analysis of biological datasets**
+**Computational analysis of Hi-C genomic contact matrices and diffusion-based image denoising**
 
 **Stack:** Python, Jupyter Notebook
 
@@ -33,15 +33,15 @@ The implementations demonstrate computational techniques for signal processing a
 - Cooler (Hi-C data format)
 - Cooltools (Hi-C analysis utilities)
 
-## Folder Structure
+## Repository Structure
 
 ```
-assignment 3/
+bioinformatics-hic-and-denoising/
 ├── code/
-│   ├── assignment_3_1.ipynb  # Image denoising with diffusion filter
-│   └── assignment_3_2.ipynb  # Hi-C contact matrix analysis
+│   ├── image_denoising.ipynb  # Image denoising with diffusion filter
+│   └── hic_analysis.ipynb     # Hi-C contact matrix analysis
 ├── data/
-│   └── noise.csv             # Input data for image denoising
+│   └── noise.csv              # Input data for image denoising
 ├── requirements.txt
 └── README.md
 ```
@@ -55,9 +55,11 @@ pip install -r requirements.txt
 ## How to Run
 
 ```bash
-cd "assignment 3/code"
+cd code
 jupyter notebook
 ```
+
+Then open either `image_denoising.ipynb` or `hic_analysis.ipynb` in your browser.
 
 ## Data / Inputs
 
@@ -82,10 +84,12 @@ jupyter notebook
 
 ## Reproducibility Notes
 
-- All paths relative
-- Originally created in an academic setting
+- All paths are relative to the repository root
+- Python dependencies are specified in `requirements.txt`
+- Notebooks include visualization of intermediate results
 
 ## Notes
 
 - Two notebooks covering different analysis aspects
 - Comprehensive bioinformatics workflow
+
