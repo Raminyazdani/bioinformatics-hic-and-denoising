@@ -63,21 +63,21 @@ Then open either `image_denoising.ipynb` or `hic_analysis.ipynb` in your browser
 
 ## Data / Inputs
 
-**Notebook 1 (Image Denoising):**
+**Image Denoising Notebook:**
 - `data/noise.csv` - Noisy 2D image matrix (96x86 pixels)
 
-**Notebook 2 (Hi-C Analysis):**
+**Hi-C Analysis Notebook:**
 - Hi-C contact matrices loaded via Cooler format from public repositories
 - Chromosome contact data at various resolutions
 
 ## Outputs
 
-**Notebook 1:**
+**Image Denoising Notebook:**
 - Denoised images at various time steps
 - Visualization of diffusion process
 - Comparison of different parameter settings
 
-**Notebook 2:**
+**Hi-C Analysis Notebook:**
 - Normalized Hi-C contact matrices
 - Contact frequency heatmaps
 - Statistical analysis of chromatin interactions
@@ -86,10 +86,7 @@ Then open either `image_denoising.ipynb` or `hic_analysis.ipynb` in your browser
 
 - All paths are relative to the repository root
 - Python dependencies are specified in `requirements.txt`
-- Notebooks include visualization of intermediate results
 
 ## Notes
 
-- Two notebooks covering different analysis aspects
-- Comprehensive bioinformatics workflow
-
+Work includes implementation of diffusion-based denoising and Hi-C normalization techniques.
