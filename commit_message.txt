@@ -1,7 +1,7 @@
-Ramin Yazdani | bioinformatics-hic-and-denoising | main | feat(denoising): Hotfix: correct data path back to noise.csv
+Ramin Yazdani | bioinformatics-hic-and-denoising | main | feat(hic): Implement Hi-C contact matrix analysis pipeline
 
-Immediately fix the data path typo discovered in the previous commit. Corrected all references from ../data/noisy.csv back to the correct filename ../data/noise.csv, restoring the notebook to working order.
+Implement comprehensive Hi-C genomic contact matrix analysis workflow in hic_analysis.ipynb. The notebook includes fetching hESC Micro-C data from public repositories (Chromosome 2 at 1 Mb resolution), visualizing raw contact heatmaps before bias removal, implementing vanilla coverage normalization, applying ICE normalization (Iterative Correction and Eigenvector decomposition), and comparative visualizations of different normalization methods.
 
-After the previous commit, attempted to run the notebook from scratch and encountered FileNotFoundError. Quickly identified the typo and created this hotfix to restore functionality. This demonstrates rapid response to fixing broken code before moving on to new features.
+Hi-C experiments capture 3D genome organization by measuring chromatin contact frequencies. The analysis pipeline corrects for systematic biases in the contact matrices using iterative correction, revealing true biological interaction patterns. This complements the image denoising workflow by adding genomic data analysis capabilities.
 
-Verification: Executed the first few cells of the notebook to confirm data loads successfully. The pd.read_csv() call now works correctly with the proper file path.
+Verification: Notebook successfully fetches data using cooler API, generates contact heatmaps, applies both vanilla and ICE normalization methods, and produces comparative visualizations showing the effect of bias correction.
