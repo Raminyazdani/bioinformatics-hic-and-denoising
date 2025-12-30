@@ -1,0 +1,7 @@
+Ramin Yazdani | bioinformatics-hic-and-denoising | main | WIP(setup): Initial commit: create basic README
+
+Initialize the bioinformatics-hic-and-denoising project repository with a minimal README file outlining project goals and planned features. This establishes the foundation for a computational biology project that will implement two workflows: Hi-C genomic contact matrix analysis and image denoising using diffusion methods.
+
+The README provides a high-level overview of what the project aims to accomplish without implementation details, following best practices of starting with documentation before code.
+
+Verification: README.md created with project description and objectives.
