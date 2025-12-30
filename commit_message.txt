@@ -1,7 +1,7 @@
-Ramin Yazdani | bioinformatics-hic-and-denoising | main | WIP(setup): Initial commit: create basic README
+Ramin Yazdani | bioinformatics-hic-and-denoising | main | WIP(setup): Add .gitignore for Python/Jupyter development
 
-Initialize the bioinformatics-hic-and-denoising project repository with a minimal README file outlining project goals and planned features. This establishes the foundation for a computational biology project that will implement two workflows: Hi-C genomic contact matrix analysis and image denoising using diffusion methods.
+Add a comprehensive .gitignore file with standard patterns for Python and Jupyter Notebook development. This prevents accidental commits of temporary files, cache directories, virtual environments, IDE configurations, and other generated artifacts.
 
-The README provides a high-level overview of what the project aims to accomplish without implementation details, following best practices of starting with documentation before code.
+Following best practices by setting up gitignore early before any code is written ensures a clean repository from the start. Patterns include __pycache__, .ipynb_checkpoints, venv, .env, and common IDE directories.
 
-Verification: README.md created with project description and objectives.
+Verification: .gitignore created with Python/Jupyter-specific ignore patterns.
