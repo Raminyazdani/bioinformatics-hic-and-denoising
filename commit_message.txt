@@ -1,7 +1,7 @@
-Ramin Yazdani | bioinformatics-hic-and-denoising | main | WIP(setup): Add .gitignore for Python/Jupyter development
+Ramin Yazdani | bioinformatics-hic-and-denoising | main | WIP(deps): Add requirements.txt with core dependencies
 
-Add a comprehensive .gitignore file with standard patterns for Python and Jupyter Notebook development. This prevents accidental commits of temporary files, cache directories, virtual environments, IDE configurations, and other generated artifacts.
+Create requirements.txt specifying core scientific computing libraries needed for numerical analysis and visualization. Initial dependencies include numpy for numerical computing, pandas for data manipulation, matplotlib for visualization, and jupyter for notebook interface.
 
-Following best practices by setting up gitignore early before any code is written ensures a clean repository from the start. Patterns include __pycache__, .ipynb_checkpoints, venv, .env, and common IDE directories.
+Specialized bioinformatics libraries (cooler, cooltools) will be added later when the Hi-C analysis workflow is implemented. This approach adds dependencies incrementally as they become needed rather than all at once.
 
-Verification: .gitignore created with Python/Jupyter-specific ignore patterns.
+Verification: requirements.txt created with numpy, pandas, matplotlib, and jupyter.
