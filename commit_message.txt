@@ -1,7 +1,7 @@
-Ramin Yazdani | bioinformatics-hic-and-denoising | main | WIP(denoising): Fix data loading path in image denoising notebook
+Ramin Yazdani | bioinformatics-hic-and-denoising | main | feat(denoising): Hotfix: correct data path back to noise.csv
 
-Attempt to update the data file reference in the image denoising notebook but accidentally introduce a typo. Changed the path from ../data/noise.csv to ../data/noisy.csv, which causes a FileNotFoundError when the notebook tries to load the data since the actual file is named noise.csv.
+Immediately fix the data path typo discovered in the previous commit. Corrected all references from ../data/noisy.csv back to the correct filename ../data/noise.csv, restoring the notebook to working order.
 
-This represents a common development mistake where a simple typo is committed without running the full notebook verification first. The error is discovered when attempting to execute the notebook from scratch in the next session.
+After the previous commit, attempted to run the notebook from scratch and encountered FileNotFoundError. Quickly identified the typo and created this hotfix to restore functionality. This demonstrates rapid response to fixing broken code before moving on to new features.
 
-Issue: Notebook now broken, will fail with "FileNotFoundError: [Errno 2] No such file or directory: '../data/noisy.csv'" when trying to read the data file.
+Verification: Executed the first few cells of the notebook to confirm data loads successfully. The pd.read_csv() call now works correctly with the proper file path.
