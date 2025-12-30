@@ -1,7 +1,7 @@
-Ramin Yazdani | bioinformatics-hic-and-denoising | main | feat(denoising): Implement diffusion-based image denoising notebook
+Ramin Yazdani | bioinformatics-hic-and-denoising | main | WIP(denoising): Fix data loading path in image denoising notebook
 
-Implement complete image denoising workflow using homogeneous 2D diffusion equation with finite difference method. The notebook (image_denoising.ipynb) includes data loading, diffusion step implementation using explicit finite difference scheme with periodic boundary conditions, efficient diffusion runner with snapshot capture, parameter exploration for different time steps (dt=0.1, 0.25, 0.4), and comprehensive analysis with visualizations.
+Attempt to update the data file reference in the image denoising notebook but accidentally introduce a typo. Changed the path from ../data/noise.csv to ../data/noisy.csv, which causes a FileNotFoundError when the notebook tries to load the data since the actual file is named noise.csv.
 
-The implementation demonstrates numerical methods for solving partial differential equations applied to image processing. The diffusion equation naturally removes noise by smoothing the image while preserving important features through controlled diffusion over discrete time steps.
+This represents a common development mistake where a simple typo is committed without running the full notebook verification first. The error is discovered when attempting to execute the notebook from scratch in the next session.
 
-Verification: Notebook executes successfully, loads data from ../data/noise.csv, produces denoised images at various timesteps, and includes visualizations comparing different parameters.
+Issue: Notebook now broken, will fail with "FileNotFoundError: [Errno 2] No such file or directory: '../data/noisy.csv'" when trying to read the data file.
