@@ -1,7 +1,7 @@
-Ramin Yazdani | bioinformatics-hic-and-denoising | main | WIP(deps): Add requirements.txt with core dependencies
+Ramin Yazdani | bioinformatics-hic-and-denoising | main | WIP(data): Add data directory with noisy image dataset
 
-Create requirements.txt specifying core scientific computing libraries needed for numerical analysis and visualization. Initial dependencies include numpy for numerical computing, pandas for data manipulation, matplotlib for visualization, and jupyter for notebook interface.
+Add the data directory structure and the noisy image dataset (noise.csv) that will be used for testing the image denoising workflow. The dataset contains a 96x86 pixel noisy 2D image in CSV format suitable for demonstrating diffusion-based denoising.
 
-Specialized bioinformatics libraries (cooler, cooltools) will be added later when the Hi-C analysis workflow is implemented. This approach adds dependencies incrementally as they become needed rather than all at once.
+Following data-driven development, input data is added before implementing the algorithms that will process it. This allows for testing with real data during implementation.
 
-Verification: requirements.txt created with numpy, pandas, matplotlib, and jupyter.
+Verification: data/noise.csv created with 96x86 noisy image matrix.
