@@ -1,7 +1,7 @@
-Ramin Yazdani | bioinformatics-hic-and-denoising | main | feat(docs): Improve README with detailed setup and usage instructions
+Ramin Yazdani | bioinformatics-hic-and-denoising | main | feat(docs): Final polish: enhance README sections and formatting
 
-Significantly expand README.md with comprehensive documentation to make the project accessible and easy to understand. Enhancements include more detailed problem and approach descriptions, clear repository structure diagram showing all directories and files, explicit setup/installation instructions (pip install -r requirements.txt), step-by-step "How to Run" instructions for Jupyter notebooks, detailed descriptions of inputs for each notebook, expected outputs and visualizations, and notes on reproducibility.
+Apply final refinements to README.md for professional portfolio presentation. Changes include more professional tagline highlighting the specific computational methods used, enhanced "Problem & Approach" section with clearer articulation of the technical approach, more detailed tech stack descriptions explaining the purpose of each library, added "Reproducibility Notes" section emphasizing best practices, and improved formatting and clarity throughout the document.
 
-With both analysis workflows fully implemented and tested, the project needs thorough documentation so others can understand its purpose, set up the environment, and run the analyses. Clear documentation is essential for portfolio presentation and reproducibility.
+Before considering the project complete, a final review ensures all documentation is polished, professional, and provides a complete picture of the project's capabilities and technical sophistication. This positions the project effectively for portfolio presentation.
 
-Verification: README now provides complete information for a new user to understand, install, and run both analysis workflows. All sections are comprehensive and professionally formatted.
+Verification: README is now portfolio-grade with professional language, comprehensive technical details, and clear structure. All sections flow logically and provide the information needed to understand and use the project.
