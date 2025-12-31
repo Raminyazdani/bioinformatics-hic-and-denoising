@@ -1,7 +1,7 @@
-Ramin Yazdani | bioinformatics-hic-and-denoising | main | feat(hic): Implement Hi-C contact matrix analysis pipeline
+Ramin Yazdani | bioinformatics-hic-and-denoising | main | feat(deps): Add cooler and cooltools for Hi-C analysis
 
-Implement comprehensive Hi-C genomic contact matrix analysis workflow in hic_analysis.ipynb. The notebook includes fetching hESC Micro-C data from public repositories (Chromosome 2 at 1 Mb resolution), visualizing raw contact heatmaps before bias removal, implementing vanilla coverage normalization, applying ICE normalization (Iterative Correction and Eigenvector decomposition), and comparative visualizations of different normalization methods.
+Update requirements.txt with specialized bioinformatics libraries needed for Hi-C contact matrix analysis. Added cooler>=0.8.0 for handling Hi-C data in the .cool/.mcool format and cooltools>=0.5.0 for Hi-C analysis utilities including normalization algorithms.
 
-Hi-C experiments capture 3D genome organization by measuring chromatin contact frequencies. The analysis pipeline corrects for systematic biases in the contact matrices using iterative correction, revealing true biological interaction patterns. This complements the image denoising workflow by adding genomic data analysis capabilities.
+These dependencies are added after implementing the Hi-C analysis notebook, ensuring the requirements file stays synchronized with the actual code dependencies. This allows others to easily install all necessary packages with pip install -r requirements.txt.
 
-Verification: Notebook successfully fetches data using cooler API, generates contact heatmaps, applies both vanilla and ICE normalization methods, and produces comparative visualizations showing the effect of bias correction.
+Verification: requirements.txt now includes all dependencies needed for both image denoising (numpy, pandas, matplotlib, jupyter) and Hi-C analysis (cooler, cooltools) workflows.
