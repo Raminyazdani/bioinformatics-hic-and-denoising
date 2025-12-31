@@ -1,0 +1,26 @@
+TYPE	FILE	LOCATOR	BEFORE_SNIPPET	PROPOSED_CHANGE	RATIONALE	STATUS
+TRACE	README.md	line 39	assignment 3/	bioinformatics-hic-and-denoising/	Remove "assignment 3" folder reference to match professional project structure	APPLIED
+TRACE	README.md	line 41	assignment_3_1.ipynb	image_denoising.ipynb	Rename notebook to professional name without assignment reference	APPLIED
+TRACE	README.md	line 42	assignment_3_2.ipynb	hic_analysis.ipynb	Rename notebook to professional name without assignment reference	APPLIED
+TRACE	README.md	line 58	cd "assignment 3/code"	cd code	Update command to match renamed folder structure	APPLIED
+TRACE	README.md	line 86	Originally created in an academic setting	(remove this line)	Remove academic setting reference for portfolio presentation	APPLIED
+RENAME	code/assignment_3_1.ipynb	filename	assignment_3_1.ipynb	image_denoising.ipynb	Rename notebook to professional name	APPLIED
+RENAME	code/assignment_3_2.ipynb	filename	assignment_3_2.ipynb	hic_analysis.ipynb	Rename notebook to professional name	APPLIED
+TRACE	code/assignment_3_1.ipynb	cell[4] markdown	### Part (a) – Loading the noisy image and visualizing it	### Loading and Visualizing the Noisy Image	Remove part (a) assignment-style section naming	APPLIED
+TRACE	code/assignment_3_1.ipynb	cell[11] markdown	### Choosing a final number of steps for part (a)	### Choosing the Optimal Number of Diffusion Steps	Remove part (a) reference	APPLIED
+TRACE	code/assignment_3_1.ipynb	cell[14] markdown	### Part (b) – Changing the time step (dt = 0.25 and dt = 0.4)	### Exploring Different Time Steps (dt = 0.25 and dt = 0.4)	Remove part (b) assignment-style section naming	APPLIED
+TRACE	code/assignment_3_1.ipynb	cell[14] markdown	In part (b) I keep the...	In this section, I keep the...	Remove part (b) reference in body text	APPLIED
+TRACE	code/assignment_3_1.ipynb	cell[14] markdown	the value I used in part (a)	the value used previously	Remove part (a) reference in body text	APPLIED
+TRACE	code/assignment_3_1.ipynb	cell[14] markdown	For `dt = 0.1`:   `n_steps = 50`  (this is exactly the setting from part (a))	For `dt = 0.1`:   `n_steps = 50`  (this is the baseline setting)	Remove part (a) reference	APPLIED
+TRACE	code/assignment_3_1.ipynb	cell[15] markdown	This is exactly the configuration I used in part (a).	This is the baseline configuration.	Remove part (a) reference	APPLIED
+TRACE	code/assignment_3_1.ipynb	cell[15] markdown	So to summarise part (b):	So to summarise:	Remove part (b) reference	APPLIED
+TRACE	code/assignment_3_1.ipynb	cell[17] markdown	### Part (c) – Why the diffusion equation is suitable for denoising	### Why the Diffusion Equation is Suitable for Denoising	Remove part (c) assignment-style section naming	APPLIED
+TRACE	code/assignment_3_1.ipynb	cell[17] markdown	For my parameters in part (a)	For the baseline parameters	Remove part (a) reference in body text	APPLIED
+TRACE	code/assignment_3_2.ipynb	cell[3] markdown	## part(a) – Fetch hESC Micro-C Data (Chr2, 1 Mb)	## Fetching hESC Micro-C Data (Chromosome 2, 1 Mb Resolution)	Remove part(a) assignment-style section naming	APPLIED
+TRACE	code/assignment_3_2.ipynb	cell[6] markdown	## part(b) – Contact heatmap before bias removal	## Visualizing Contact Heatmap (Before Bias Removal)	Remove part(b) assignment-style section naming	APPLIED
+TRACE	code/assignment_3_2.ipynb	cell[6] markdown	We use the matrix `M_chr2` obtained in part (a)	We use the matrix `M_chr2` obtained previously	Remove part (a) reference in body text	APPLIED
+TRACE	code/assignment_3_2.ipynb	cell[8] markdown	## part(c) – Vanilla Coverage Normalization	## Vanilla Coverage Normalization	Remove part(c) assignment-style section naming	APPLIED
+TRACE	code/assignment_3_2.ipynb	cell[10] markdown	## part(d) – ICE Normalization (Iterative Correction)	## ICE Normalization (Iterative Correction and Eigenvector Decomposition)	Remove part(d) assignment-style section naming	APPLIED
+TRACE	code/assignment_3_2.ipynb	cell[11] code comment	# Use the raw contact matrix from part (a)	# Use the raw contact matrix obtained previously	Remove part (a) reference in code comment	APPLIED
+DOC	README.md	line 86	- Originally created in an academic setting	(remove)	Remove academic context for portfolio presentation	APPLIED
+STRUCTURE	(root)	N/A	No .gitignore	Create .gitignore with Python/Jupyter patterns	Add standard .gitignore for Python/Jupyter projects	APPLIED

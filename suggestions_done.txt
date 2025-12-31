@@ -1,0 +1,27 @@
+FILE	LOCATOR	BEFORE_SNIPPET	AFTER_SNIPPET	NOTES
+code/assignment_3_1.ipynb	filename	assignment_3_1.ipynb	image_denoising.ipynb	Renamed notebook to professional name without assignment reference
+code/assignment_3_2.ipynb	filename	assignment_3_2.ipynb	hic_analysis.ipynb	Renamed notebook to professional name without assignment reference
+code/image_denoising.ipynb	cell[4] markdown	### Part (a) – Loading the noisy image and visualizing it	### Loading and Visualizing the Noisy Image	Removed Part (a) assignment-style section naming
+code/image_denoising.ipynb	cell markdown	### Choosing a final number of steps for part (a)	### Choosing the Optimal Number of Diffusion Steps	Removed part (a) reference from section header
+code/image_denoising.ipynb	cell markdown	### Part (b) – Changing the time step (dt = 0.25 and dt = 0.4)	### Exploring Different Time Steps (dt = 0.25 and dt = 0.4)	Removed Part (b) assignment-style section naming
+code/image_denoising.ipynb	cell markdown body	In part (b) I keep the	In this section, I keep the	Removed part (b) reference in body text
+code/image_denoising.ipynb	cell markdown body	the value I used in part (a)	the value used previously	Removed part (a) reference in body text
+code/image_denoising.ipynb	cell markdown body	(this is exactly the setting from part (a))	(this is the baseline setting)	Removed part (a) reference
+code/image_denoising.ipynb	cell markdown body	This is exactly the configuration I used in part (a).	This is the baseline configuration.	Removed part (a) reference
+code/image_denoising.ipynb	cell markdown body	So to summarise part (b):	So to summarise:	Removed part (b) reference
+code/image_denoising.ipynb	cell markdown	### Part (c) – Why the diffusion equation is suitable for denoising	### Why the Diffusion Equation is Suitable for Denoising	Removed Part (c) assignment-style section naming
+code/image_denoising.ipynb	cell markdown body	For my parameters in part (a)	For the baseline parameters	Removed part (a) reference in body text
+code/hic_analysis.ipynb	cell markdown	## part(a) – Fetch hESC Micro-C Data (Chr2, 1 Mb)	## Fetching hESC Micro-C Data (Chromosome 2, 1 Mb Resolution)	Removed part(a) assignment-style section naming
+code/hic_analysis.ipynb	cell markdown	## part(b) – Contact heatmap before bias removal	## Visualizing Contact Heatmap (Before Bias Removal)	Removed part(b) assignment-style section naming
+code/hic_analysis.ipynb	cell markdown body	We use the matrix `M_chr2` obtained in part (a)	We use the matrix `M_chr2` obtained previously	Removed part (a) reference in body text
+code/hic_analysis.ipynb	cell markdown	## part(c) – Vanilla Coverage Normalization	## Vanilla Coverage Normalization	Removed part(c) assignment-style section naming
+code/hic_analysis.ipynb	cell markdown	## part(d) – ICE Normalization (Iterative Correction)	## ICE Normalization (Iterative Correction and Eigenvector Decomposition)	Removed part(d) assignment-style section naming
+code/hic_analysis.ipynb	cell code comment	# Use the raw contact matrix from part (a)	# Use the raw contact matrix obtained previously	Removed part (a) reference in code comment
+README.md	line 1	# Bioinformatics Data Processing Pipeline	# Hi-C Contact Matrix Analysis and Image Denoising	Updated title to match professional project identity
+README.md	line 3	**Computational analysis of biological datasets**	**Computational analysis of Hi-C genomic contact matrices and diffusion-based image denoising**	Updated tagline to be more specific and professional
+README.md	line 37-42	assignment 3/ structure	bioinformatics-hic-and-denoising/ structure	Updated folder structure to remove assignment reference
+README.md	line 41	assignment_3_1.ipynb	image_denoising.ipynb	Updated filename reference after rename
+README.md	line 42	assignment_3_2.ipynb	hic_analysis.ipynb	Updated filename reference after rename
+README.md	line 58	cd "assignment 3/code"	cd code	Simplified command to match new structure
+README.md	line 86	- Originally created in an academic setting	(removed)	Removed academic context reference for portfolio presentation
+.gitignore	N/A	(file did not exist)	(created with Python/Jupyter patterns)	Created standard .gitignore for Python/Jupyter projects
